@@ -10,7 +10,7 @@ if (file.exists()) {
     publishModule {
         groupId 'com.dreamgyf.android.utils'
         moduleName 'Utils'
-        version '0.1'
+        version '0.2'
         description 'Android相关工具类'
         url 'https://github.com/dreamgyf/AndroidLibraries/tree/master/Utils'
     }

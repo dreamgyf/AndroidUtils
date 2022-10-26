@@ -3,16 +3,18 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-def file = new File("${rootDir.parent}/maven_publish.gradle")
+def file = new File("${rootDir.parent}/module_publish.gradle")
 if (file.exists()) {
     apply from: file.absolutePath
 
     publishModule {
-        groupId 'com.dreamgyf.android.utils'
-        moduleName 'Utils'
-        version '0.3'
-        description 'Android相关工具类'
-        url 'https://github.com/dreamgyf/AndroidUtils'
+        library {
+            groupId = 'com.dreamgyf.android.utils'
+            moduleName = 'Utils'
+            version = '0.3'
+            description = 'Android相关工具类'
+            url = 'https://github.com/dreamgyf/AndroidUtils'
+        }
     }
 }
 
